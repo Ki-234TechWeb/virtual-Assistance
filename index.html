@@ -1,0 +1,1179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="./fontawesome-free-6.5.2-web/css/all.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <style>
+    @media screen and (min-width: 768px) {
+      .nav_links-mobile {
+        display: none;
+      }
+
+      .nav_brand img {
+        width: 120px;
+      }
+
+      .nav_links {
+        display: flex;
+        align-items: center;
+      }
+
+      .nav_links li a {
+        text-decoration: none;
+        color: inherit;
+        position: relative;
+        transition: all 0.2s ease;
+        font-family: Source Serif Pro;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 25.06px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+
+      /* .nav_links2 li a:hover  */
+      .nav_links li:hover {
+        background-color: #ba8f65;
+        color: #fff;
+        padding: 0 5px;
+      }
+
+      .nav_links li:active {
+        background-color: #ba8f65;
+        color: #fff;
+        padding: 0 5px;
+      }
+
+      .nav_links li {
+        list-style: none;
+
+        margin: 0 10px;
+        font-size: 20px;
+        font-weight: bold;
+        color: #7a7878;
+        position: relative;
+        transition: 0.3s ease;
+      }
+
+      .toggle_btn {
+        display: none;
+      }
+
+      .btn {
+        padding: 10px 20px;
+        width: 90%;
+        margin: 10px auto;
+        background: #ba8f65;
+        border: none;
+        font-size: 16px;
+        font-weight: bold;
+        color: #fff;
+      }
+
+      .banner_content {
+        display: grid;
+        padding: 50px;
+        grid-template-columns: repeat(2, 500px);
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        margin: 0 auto;
+        perspective: 800px;
+        margin-bottom: 50px;
+      }
+
+      .banner_content div:nth-child(1) {
+        order: 2;
+        position: relative;
+        right: 10%;
+        z-index: 1;
+        transform: rotateY(40deg);
+      }
+      .banner_content div:nth-child(1) img {
+        width: 100%;
+      }
+
+      .banner_text {
+        background: rgba(255, 255, 255, 1);
+        padding: 25px;
+        margin: auto;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        width: 100%;
+        position: relative;
+        top: 0;
+        left: 30%;
+        text-align: center;
+        margin: 0 auto;
+        z-index: 11;
+        transform: rotateY(0deg);
+      }
+
+      .banner_text h2 {
+        font-size: 1.5rem;
+        color: #000000;
+        text-align: center;
+        margin-bottom: 20px;
+        font-family: "Lato", serif;
+        font-weight: 400;
+        font-style: normal;
+        padding-bottom: 15px;
+      }
+
+      .banner_text p {
+        font-size: 1.2rem;
+        position: relative;
+        top: -30px;
+        padding-top: 20px;
+
+        margin: 0 auto;
+      }
+
+      .banner_text span {
+        font-size: 0.8rem;
+        position: relative;
+
+        margin: 0 auto;
+
+        line-height: 1.5;
+      }
+
+      .help {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 330px);
+        align-items: center;
+        padding: 40px 0;
+      }
+      .help_img img {
+        width: 330px;
+        height: 600px;
+        padding: 50px 0;
+      }
+
+      .help h1 {
+        font-size: 1.8rem;
+        padding: 10px 0;
+        text-transform: capitalize;
+        font-family: var(--font-family);
+      }
+
+      .help p {
+        font-size: 1.1rem;
+        padding: 10px 0;
+      }
+
+      .help_button {
+        padding: 12px 30px;
+        margin: 20px auto;
+        background: #ba8f65;
+        border: none;
+        font-size: 14px;
+        font-weight: bold;
+        color: #fff;
+        border-radius: 5px;
+        text-transform: capitalize;
+      }
+
+      .help_button:hover {
+        background: #000;
+        transition: 0.5s ease;
+      }
+
+      .our_mission h2 {
+        left: 36%;
+      }
+   
+ 
+.service_btn button{
+font-size: 0.8rem;
+padding: 10px 15px;
+
+}
+
+  
+
+  .bg_pattern svg{
+    position:absolute;
+    width: 100%;
+    top: -10%;
+    z-index: -1;
+    left: 0;
+    width: 100%;
+    
+ 
+}
+
+.testimonial-con {
+grid-template-columns: repeat(2, 280px);
+
+
+}
+
+
+.testimonial_header p{
+  width:500px ;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+    @media screen and (min-width: 996px) {
+      .nav_links li a {
+        font-size: 17px;
+      }
+
+      .btn {
+        padding: 10px 20px;
+        width: 90%;
+        margin: 10px 20px;
+        margin-left: 30px;
+      }
+
+      .nav_links li:hover {
+        background-color: #ba8f65;
+        color: #fff;
+        padding: 0 10px;
+      }
+
+      .nav_links li:active {
+        background-color: #ba8f65;
+        color: #fff;
+        padding: 0 10px;
+      }
+
+      .banner_content {
+        display: grid;
+        padding: 50px;
+        grid-template-columns: repeat(2, 400px);
+        align-items: center;
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+      }
+
+      .banner_content div:nth-child(1) {
+        order: 2;
+        position: relative;
+        right: -15%;
+        z-index: 1;
+        transform: rotateY(0deg);
+        max-width: 500px;
+        animation: fadeInSlide 1s ease-out forwards; /* Apply animation */
+      }
+      .banner_content div:nth-child(1) img {
+        width: 100%;
+        height: 350px;
+      }
+
+      .banner_text {
+        background: rgba(255, 255, 255, 1);
+        padding: 25px;
+        margin: auto;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        width: 100%;
+        position: relative;
+        top: 0;
+        left: -10%;
+        text-align: center;
+        margin: 0 auto;
+        z-index: 11;
+        transform: rotateY(0deg);
+      }
+
+      .banner_text h2 {
+        font-size: 1.6rem;
+        color: #000000;
+        text-align: center;
+        margin-bottom: 20px;
+        font-family: "Lato", serif;
+        font-weight: 400;
+        font-style: normal;
+        padding-bottom: 15px;
+      }
+
+      .banner_text p {
+        font-size: 1.2rem;
+        position: relative;
+        top: -30px;
+        padding-top: 20px;
+
+        margin: 0 auto;
+      }
+
+      .banner_text span {
+        font-size: 0.9rem;
+        position: relative;
+        margin: 0 auto;
+        line-height: 1.5;
+      }
+
+      .help {
+        width: 100%;
+        height: 80;
+        display: grid;
+        grid-template-columns: repeat(2, 400px);
+        align-items: center;
+        padding: 50px 0;
+        gap: 50px;
+        justify-content: center;
+      }
+      .help_img img {
+        width: 400px;
+        height: 600px;
+        padding: 50px 0;
+      }
+
+      .help h1 {
+        font-size: 1.8rem;
+        padding: 20px 0;
+        text-transform: capitalize;
+        font-family: var(--font-family);
+      }
+
+      .our_mission h2 {
+        left: 35%;
+      }
+
+
+      .mySlides {
+    display: block !important;
+  }
+
+      .service{
+display: grid;
+grid-template-columns: repeat(3, 330px);
+justify-content: center;
+align-items: center;
+
+  }
+
+
+
+
+
+.service ul li {
+font-size: 1rem;
+
+}
+
+
+
+
+
+  .testimonial-con {
+grid-template-columns: repeat(3,  280px);
+
+}
+
+.testimonial_header p{
+  width:500px ;
+
+}
+
+
+  .prev, .next {
+display: none;
+  }
+
+  .dot {
+    display: none;
+  }
+
+  .bg_pattern svg{
+    position:absolute;
+    width: 100%;
+    top: -5%;
+    z-index: -1;
+    left: 0;
+    width: 100%;
+    
+ 
+}
+
+
+
+.footer_container-1{
+    width: 100%;
+    /* display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3,1fr); */
+    align-items: baseline;
+    justify-content: space-between;
+    margin: 0 auto;
+
+    }
+    .footer_single-item {
+    flex: 0 0 calc(30% - 0.5rem);
+}
+
+ 
+
+.footer_single-item2{
+display: flex;
+gap: 40px;
+order: 2;
+flex: 0 0 calc(30% - 0.5rem);
+transform: translateX(40px);
+}
+
+.footer_newsletter{
+  flex: 0 0 calc(230px - 0.5rem);
+display: grid;
+gap: 10px;
+padding-bottom: 20px;
+order: 3;
+}
+
+
+
+
+
+
+
+
+    }
+
+    @media screen and (min-width: 1200px) {
+      .banner_content {
+        display: grid;
+        padding: 50px;
+        grid-template-columns: repeat(2, 400px);
+        align-items: center;
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+      }
+
+      .banner_content div:nth-child(1) {
+        order: 2;
+        position: relative;
+        right: -20%;
+        z-index: 1;
+        transform: rotateY(0deg);
+        max-width: 500px;
+        animation: fadeInSlide 1s ease-out forwards; /* Apply animation */
+      }
+      .banner_content div:nth-child(1) img {
+        width: 100%;
+        height: 350px;
+      }
+
+      .banner_text {
+        background: rgba(255, 255, 255, 1);
+        padding: 25px;
+        margin: auto;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        width: 100%;
+        position: relative;
+
+        left: -15%;
+        text-align: center;
+        margin: 0 auto;
+        z-index: 11;
+        transform: rotateY(0deg);
+      }
+
+      .help {
+        width: 100%;
+        height: 80;
+        display: grid;
+        grid-template-columns: repeat(2, 450px);
+        align-items: center;
+        padding: 50px 0;
+        gap: 50px;
+        justify-content: center;
+      }
+      .help_img img {
+        width: 450px;
+        height: 600px;
+        padding: 50px 0;
+      }
+
+      .help h1 {
+        font-size: 1.8rem;
+        padding: 20px 0;
+        text-transform: capitalize;
+        font-family: var(--font-family);
+      }
+
+      .help p {
+        font-size: 1rem;
+        padding: 20px 0;
+      }
+
+      .service{
+        display: grid;
+        grid-template-columns: repeat(3, 380px);
+        justify-content: center;
+        align-items: center;
+        
+          }
+
+
+      
+      .testimonial-con {
+grid-template-columns: repeat(4,  280px);
+
+}
+
+.footer_single-item2{
+display: flex;
+gap: 40px;
+order: 2;
+flex: 0 0 calc(30% - 0.5rem);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+    }
+  </style>
+
+  <body>
+    <!-- banner-container -->
+    <div class="banner">
+      <nav class="nav">
+        <!-- logo -->
+        <div class="nav_brand">
+          <img src="./img/logo-preview.png" alt="logo" />
+        </div>
+
+        <!-- nav-links desktop -->
+        <div>
+          <ul class="nav_links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Social</a></li>
+            <!-- button -->
+            <button class="btn">Hire me</button>
+          </ul>
+        </div>
+
+        <!-- toggle button mobile -->
+        <div class="toggle_btn">
+          <svg
+            fill="#000000"
+            viewBox="0 0 32 32"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <title>bars-sort</title>
+              <path
+                d="M30 6.749h-28c-0.69 0-1.25 0.56-1.25 1.25s0.56 1.25 1.25 1.25v0h28c0.69 0 1.25-0.56 1.25-1.25s-0.56-1.25-1.25-1.25v0zM18 14.75h-16c-0.69 0-1.25 0.56-1.25 1.25s0.56 1.25 1.25 1.25v0h16c0.69 0 1.25-0.56 1.25-1.25s-0.56-1.25-1.25-1.25v0zM8.053 22.75h-6.053c-0.69 0-1.25 0.56-1.25 1.25s0.56 1.25 1.25 1.25v0h6.053c0.69 0 1.25-0.56 1.25-1.25s-0.56-1.25-1.25-1.25v0z"
+              ></path>
+            </g>
+          </svg>
+        </div>
+      </nav>
+      <!-- nav-links mobile -->
+      <div class="nav_links-mobile">
+        <ul class="nav_links2">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Social</a></li>
+        </ul>
+        <!-- button -->
+        <button class="btn">Hire me</button>
+      </div>
+
+      <div class="bg_parttern">
+        <svg
+          width="1728"
+          height="822"
+          viewBox="0 0 1728 822"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M257.991 -939.145C339.94 -1159.02 631.228 -1203.93 775.599 -1018.95L1224.24 -444.112C1242.02 -421.332 1262.99 -401.241 1286.52 -384.46L1710.42 -82.0714C1935.29 78.3417 1842.21 431.705 1567.49 460.52L926.486 527.755C903.055 530.212 879.995 535.421 857.783 543.275L122.233 803.325C-120.052 888.984 -350.859 650.253 -257.073 410.996L-16.0005 -204.001L257.991 -939.145Z"
+            fill="#E3C2A1"
+          />
+        </svg>
+      </div>
+      <!-- banner body -->
+      <div class="banner_content">
+        <div>
+          <img src="./img/2a4d97b9b1cf1eff73037f5fff28502c.jpg" alt="" />
+        </div>
+        <div class="banner_text">
+          <h2>Hello, I am Leah!</h2>
+          <p>It’s time to make your dream come true!</p>
+          <span>
+            C ever since the 1500s, when an unknown printer took a galley of
+            type and scrambled it to make a type specimen book. It has survived
+            not only five centuries, but also the leap into electronic
+            typesetting, remaining essentially unchanged.</span
+          >
+
+          <button class="btn_learn">learn more</button>
+        </div>
+      </div>
+</div>
+      <!-- mission section -->
+
+      <div class="our_mission">
+        <div class="misssion_text">
+          <h2>my Mission</h2>
+          <ul>
+            <li>lets make your business stand out</li>
+            <li>save your time and energy</li>
+
+            <li>give you peace of mind</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="help">
+        <div class="help_img">
+          <img src="./img/2nd-img.jpg" alt="" />
+        </div>
+        <div class="help_text">
+          <h1>i can help you make money doing what you love</h1>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Accusantium, quae perspiciatis labore consequuntur quasi ea
+            obcaecati nam beatae atque sint, alias rerum perferendis illo
+            molestias? .
+          </p>
+
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Accusantium, quae perspiciatis labore consequuntur quasi ea
+            obcaecati nam beatae atque sint, alias rerum perferendis illo
+            molestias?.
+          </p>
+
+          <button class="help_button">get started</button>
+        </div>
+      </div>
+
+<!-- service section -->
+   <div class="service_container">
+<div class="bg_pattern">
+  <svg width="1728" height="632" viewBox="0 0 1728 632" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M118.855 95.0093C-101.022 13.0601 -145.933 -278.228 39.0494 -422.599L613.889 -871.237C636.668 -889.016 656.759 -909.992 673.54 -933.515L975.929 -1357.42C1136.34 -1582.29 1489.71 -1489.21 1518.52 -1214.49L1585.76 -573.486C1588.21 -550.055 1593.42 -526.995 1601.28 -504.783L1861.33 230.767C1946.98 473.052 1708.25 703.859 1469 610.073L854 369.001L118.855 95.0093Z" fill="#E3C2A1"/>
+    </svg>
+    
+
+</div>
+<div class="service_header">
+  <h1> my service</h1>
+<p> Here are three important services that can be rendered by me!</p>
+
+</div>
+<div class="service">
+<div class="our_service mySlides fade">
+  <img src="./img/img-3.png" alt="">
+<div class="service_btn">
+<button> Administrative Support </button>
+
+</div>
+
+<ul>
+<li> 
+    Scheduling & Calendar Management: Booking appointments, 
+  managing calendars, and setting reminders.
+ </li>
+ <li> 
+  Email Management: Responding to emails, filtering messages, 
+  and organizing inboxes.
+</li>
+
+<li> 
+  Travel Arrangements: Booking flights, hotels, and transportation.
+  Data Entry & Organization: Entering data into spreadsheets, 
+   organizing files, and managing databases.
+</li>
+
+
+
+
+
+
+
+</ul>
+
+</div>
+
+<div class="our_service mySlides fade">
+  <img src="./img/img-4.png" alt="">
+<div class="service_btn">
+<button>Customer Support </button>
+
+</div>
+
+<ul>
+<li> 
+    Scheduling & Calendar Management: Booking appointments, 
+  managing calendars, and setting reminders.
+ </li>
+ <li> 
+  Email Management: Responding to emails, filtering messages, 
+  and organizing inboxes.
+</li>
+
+<li> 
+  Travel Arrangements: Booking flights, hotels, and transportation.
+  Data Entry & Organization: Entering data into spreadsheets, 
+   organizing files, and managing databases.
+</li>
+
+
+
+
+
+
+
+</ul>
+
+</div>
+
+<div class="our_service mySlides fade">
+  <img src="./img/img-6.png" alt="">
+<div class="service_btn">
+<button> Marketing & Social Media Management </button>
+
+</div>
+
+<ul>
+<li> 
+    Scheduling & Calendar Management: Booking appointments, 
+  managing calendars, and setting reminders.
+ </li>
+ <li> 
+  Email Management: Responding to emails, filtering messages, 
+  and organizing inboxes.
+</li>
+
+<li> 
+  Travel Arrangements: Booking flights, hotels, and transportation.
+  Data Entry & Organization: Entering data into spreadsheets, 
+   organizing files, and managing databases.
+</li>
+
+
+</ul>
+
+</div>
+
+ <!-- Next and previous buttons -->
+ <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+ <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+ <div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+
+
+
+
+
+
+
+</div>
+
+
+
+   </div>
+<!-- end of service section -->
+
+<!-- testimonial -->
+
+
+
+<div class="testimonial-container">
+<div class="testimonial_header">
+<h1>  What My Clients Say</h1>
+<p>   Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+  Lorem Ipsum has been the industry's standard dummy text </p>
+  </div>
+<div class="testimonial-con">
+  
+  <div class="testimonial">
+      <img src="./img/testi-1.png" alt="Customer Photo" class="testimonial-image">
+      <div class="rating_icon-con">
+      <span class="rating-icon">
+        <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#BA8F65"/>
+          </svg>
+          
+      </span>
+
+      <span class="rating-icon">
+        <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#BA8F65"/>
+          </svg>
+          
+      </span>
+
+      <span class="rating-icon">
+        <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#BA8F65"/>
+          </svg>
+          
+      </span>
+
+      <span class="rating-icon">
+        <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#BA8F65"/>
+          </svg>
+          
+      </span>
+
+      <span class="rating-icon">
+        <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#BA8F65"/>
+          </svg>
+          
+      </span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+      <p class="testimonial-text">
+          "This product has truly transformed the way I approach my work. The quality and attention to detail are exceptional. I highly recommend it to anyone looking for a reliable solution!"
+      </p>
+  </div>
+
+  <div class="testimonial">
+    <img src="./img/testi-2.jpg" alt="Customer Photo" class="testimonial-image">
+    <div class="rating_icon-con">
+    <span class="rating-icon">
+      <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#BA8F65"/>
+        </svg>
+        
+    </span>
+
+    <span class="rating-icon">
+      <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#BA8F65"/>
+        </svg>
+        
+    </span>
+
+    <span class="rating-icon">
+      <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#BA8F65"/>
+        </svg>
+        
+    </span>
+
+    <span class="rating-icon">
+      <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#BA8F65"/>
+        </svg>
+        
+    </span>
+
+    <span class="rating-icon">
+      <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#BA8F65"/>
+        </svg>
+        
+    </span>
+
+</div>
+
+    <p class="testimonial-text">
+        "This product has truly transformed the way I approach my work. The quality and attention to detail are exceptional. I highly recommend it to anyone looking for a reliable solution!"
+    </p>
+</div>
+
+
+<div class="testimonial">
+  <img src="./img/testi-2.jpg" alt="Customer Photo" class="testimonial-image">
+  <div class="rating_icon-con">
+  <span class="rating-icon">
+    <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#BA8F65"/>
+      </svg>
+      
+  </span>
+
+  <span class="rating-icon">
+    <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#BA8F65"/>
+      </svg>
+      
+  </span>
+
+  <span class="rating-icon">
+    <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#BA8F65"/>
+      </svg>
+      
+  </span>
+
+  <span class="rating-icon">
+    <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#BA8F65"/>
+      </svg>
+      
+  </span>
+
+  <span class="rating-icon">
+    <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#BA8F65"/>
+      </svg>
+      
+  </span>
+
+</div>
+
+  <p class="testimonial-text">
+      "This product has truly transformed the way I approach my work. The quality and attention to detail are exceptional. I highly recommend it to anyone looking for a reliable solution!"
+  </p>
+</div>
+
+
+<div class="testimonial">
+  <img src="./img/testi-4.jpg" alt="Customer Photo" class="testimonial-image">
+  <div class="rating_icon-con">
+  <span class="rating-icon">
+    <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#BA8F65"/>
+      </svg>
+      
+  </span>
+
+  <span class="rating-icon">
+    <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#BA8F65"/>
+      </svg>
+      
+  </span>
+
+  <span class="rating-icon">
+    <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#BA8F65"/>
+      </svg>
+      
+  </span>
+
+  <span class="rating-icon">
+    <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#BA8F65"/>
+      </svg>
+      
+  </span>
+
+  <span class="rating-icon">
+    <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#BA8F65"/>
+      </svg>
+      
+  </span>
+
+</div>
+
+  <p class="testimonial-text">
+      "This product has truly transformed the way I approach my work. The quality and attention to detail are exceptional. I highly recommend it to anyone looking for a reliable solution!"
+  </p>
+</div>
+
+
+
+</div>
+<div class="testi-btn">
+<button class="help_button" style="margin: auto;">read more</button>
+</div>
+
+</div>
+
+
+<!-- end of testiomial -->
+
+
+
+
+      
+<!-- start of footer -->
+<div class="footer">
+ 
+<div class="footer_container-1">
+<div class="footer_single-item">
+<div class="foot-logo">
+  <img src="./img/footlogo-removebg-preview.png" alt="">
+</div>
+<p>  440 N Barranca Ave. #4637, Covina, CA 91723</p>
+<p>(951) 438-8003</p>
+
+
+</div>
+
+
+<div class="footer_newsletter">
+
+
+
+  <p>Subscribe to our newsletter</p>
+  <input type="text" placeholder="First Name">
+  <input type="email" placeholder=" Email">
+  <button>Subscribe</button>
+</div>
+
+
+
+<div class="footer_single-item2">
+<ul>
+<li> Services </li>
+<li>  Solutions </li>
+<li>   Pricing</li>
+
+</ul>
+<ul>
+  <li> Resources</li>
+<li> About Us</li>
+<li> Careers </li>
+<li> Contact Us </li>
+
+
+</ul>
+
+
+</div>
+
+
+</div>
+<div class="underline"></div>
+
+<div class="footer_container-2">
+  <div>
+  <p>copy Right© 2024 Indinero. All Rights Reserved</p>
+  <p>Privacy Policy</p>
+  <p>Terms of Service</p>
+</div>
+
+<div class="foot_icons">
+
+
+<span>    
+  <svg width="152" height="19" viewBox="0 0 152 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M57.8172 1.375C58.4148 1.375 58.9422 1.90234 58.9422 2.53516V16C58.9422 16.6328 58.4148 17.125 57.8172 17.125H44.282C43.6844 17.125 43.1922 16.6328 43.1922 16V2.53516C43.1922 1.90234 43.6844 1.375 44.282 1.375H57.8172ZM47.9383 14.875V7.38672H45.618V14.875H47.9383ZM46.7781 6.33203C47.5164 6.33203 48.1141 5.73438 48.1141 4.99609C48.1141 4.25781 47.5164 3.625 46.7781 3.625C46.0047 3.625 45.407 4.25781 45.407 4.99609C45.407 5.73438 46.0047 6.33203 46.7781 6.33203ZM56.6922 14.875V10.7617C56.6922 8.75781 56.2352 7.17578 53.8797 7.17578C52.7547 7.17578 51.9812 7.80859 51.6648 8.40625H51.6297V7.38672H49.4148V14.875H51.7352V11.1836C51.7352 10.1992 51.9109 9.25 53.1414 9.25C54.3367 9.25 54.3367 10.375 54.3367 11.2188V14.875H56.6922Z" fill="white"/>
+    <path d="M89.6219 9.25C89.6219 13.6094 86.4227 17.2305 82.2391 17.8633V11.7812H84.2781L84.6648 9.25H82.2391V7.63281C82.2391 6.92969 82.5906 6.26172 83.6805 6.26172H84.7703V4.11719C84.7703 4.11719 83.7859 3.94141 82.8016 3.94141C80.8328 3.94141 79.532 5.17188 79.532 7.35156V9.25H77.3172V11.7812H79.532V17.8633C75.3484 17.2305 72.1844 13.6094 72.1844 9.25C72.1844 4.43359 76.0867 0.53125 80.9031 0.53125C85.7195 0.53125 89.6219 4.43359 89.6219 9.25Z" fill="white"/>
+    <path d="M113.817 5.20703C116.032 5.20703 117.86 7.03516 117.86 9.25C117.86 11.5 116.032 13.293 113.817 13.293C111.567 13.293 109.774 11.5 109.774 9.25C109.774 7.03516 111.567 5.20703 113.817 5.20703ZM113.817 11.8867C115.259 11.8867 116.419 10.7266 116.419 9.25C116.419 7.80859 115.259 6.64844 113.817 6.64844C112.341 6.64844 111.18 7.80859 111.18 9.25C111.18 10.7266 112.376 11.8867 113.817 11.8867ZM118.95 5.06641C118.95 5.59375 118.528 6.01562 118.001 6.01562C117.473 6.01562 117.052 5.59375 117.052 5.06641C117.052 4.53906 117.473 4.11719 118.001 4.11719C118.528 4.11719 118.95 4.53906 118.95 5.06641ZM121.622 6.01562C121.692 7.31641 121.692 11.2188 121.622 12.5195C121.552 13.7852 121.27 14.875 120.356 15.8242C119.442 16.7383 118.317 17.0195 117.052 17.0898C115.751 17.1602 111.848 17.1602 110.548 17.0898C109.282 17.0195 108.192 16.7383 107.243 15.8242C106.329 14.875 106.048 13.7852 105.977 12.5195C105.907 11.2188 105.907 7.31641 105.977 6.01562C106.048 4.75 106.329 3.625 107.243 2.71094C108.192 1.79688 109.282 1.51562 110.548 1.44531C111.848 1.375 115.751 1.375 117.052 1.44531C118.317 1.51562 119.442 1.79688 120.356 2.71094C121.27 3.625 121.552 4.75 121.622 6.01562ZM119.934 13.8906C120.356 12.8711 120.251 10.4102 120.251 9.25C120.251 8.125 120.356 5.66406 119.934 4.60938C119.653 3.94141 119.126 3.37891 118.458 3.13281C117.403 2.71094 114.942 2.81641 113.817 2.81641C112.657 2.81641 110.196 2.71094 109.177 3.13281C108.473 3.41406 107.946 3.94141 107.665 4.60938C107.243 5.66406 107.348 8.125 107.348 9.25C107.348 10.4102 107.243 12.8711 107.665 13.8906C107.946 14.5938 108.473 15.1211 109.177 15.4023C110.196 15.8242 112.657 15.7188 113.817 15.7188C114.942 15.7188 117.403 15.8242 118.458 15.4023C119.126 15.1211 119.688 14.5938 119.934 13.8906Z" fill="white"/>
+    <path d="M151.211 4.64453C151.633 6.12109 151.633 9.28516 151.633 9.28516C151.633 9.28516 151.633 12.4141 151.211 13.9258C151 14.7695 150.332 15.4023 149.523 15.6133C148.012 16 142.035 16 142.035 16C142.035 16 136.023 16 134.512 15.6133C133.703 15.4023 133.035 14.7695 132.824 13.9258C132.402 12.4141 132.402 9.28516 132.402 9.28516C132.402 9.28516 132.402 6.12109 132.824 4.64453C133.035 3.80078 133.703 3.13281 134.512 2.92188C136.023 2.5 142.035 2.5 142.035 2.5C142.035 2.5 148.012 2.5 149.523 2.92188C150.332 3.13281 151 3.80078 151.211 4.64453ZM140.066 12.1328L145.059 9.28516L140.066 6.4375V12.1328Z" fill="white"/>
+    </svg>
+    
+</span>
+
+
+
+
+</div>
+
+
+
+
+
+
+</div>
+</div>
+<!-- end of footer -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    <script src="./script.js"></script>
+  </body>
+</html>
